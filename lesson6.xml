@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AAAA">
+    <test name="BBBB">
+        <parameter name="word" value="Alexandra"/>
+        <classes>
+            <class name="test.java.Task5TestXml"/>
+        </classes>
+    </test>
+</suite>
