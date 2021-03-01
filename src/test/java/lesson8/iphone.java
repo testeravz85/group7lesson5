@@ -25,6 +25,7 @@ public class iphone extends TestBaseSetup {
     @BeforeMethod
     public void setUp(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);//
+        driver.manage().timeouts().pageLoadTimeout(2,TimeUnit.SECONDS);
 
 
     }

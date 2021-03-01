@@ -1,4 +1,4 @@
-package test.java;
+package test.java.lesson8;
 
 import main.java.Task2;
 import org.testng.annotations.Test;
@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class Task2Test {
-
-    @Test()
+    @Test
     public void testStringMethod() {
         Task2 matrixMaker = new Task2();
         String matrix = matrixMaker.someMethod();
@@ -17,6 +16,5 @@ public class Task2Test {
 
         String[] words = lines[0].split(" ");
         assertEquals(words.length, 10);
-
     }
 }
