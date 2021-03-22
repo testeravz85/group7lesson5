@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test.java.helpers.PropertyLoader;
 
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
@@ -17,7 +18,7 @@ public class HomePage extends BasePage {
 
     public HomePage open(){
         logger.info("Open Home page");
-        driver.get("https://www.amazon.com/");
+        driver.get(PropertyLoader.getProperty("url"));
         wait.until(ExpectedConditions.elementToBeClickable(searchFieldLocator)).click();
         return this;
     }
